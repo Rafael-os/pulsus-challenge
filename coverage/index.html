@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-14T17:23:20+03:00">2021-04-14T17:23:20+03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-04-14T20:03:22+03:00">2021-04-14T20:03:22+03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>41</b> relevant lines,
-    <span class="green"><b>41</b> lines covered</span> and
+    <b>43</b> relevant lines,
+    <span class="green"><b>43</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -104,11 +104,11 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#c64c21aa3f01371ea0b5f38d2226d864913ae47b" class="src_link" title="app/models/planet.rb">app/models/planet.rb</a></td>
+            <td class="strong t-file__name"><a href="#b457dd489d8c0b157918fbdfe484163cc092bff4" class="src_link" title="app/models/person.rb">app/models/person.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -455,9 +455,9 @@
 </div>
 
       
-        <div class="source_table" id="c64c21aa3f01371ea0b5f38d2226d864913ae47b">
+        <div class="source_table" id="b457dd489d8c0b157918fbdfe484163cc092bff4">
   <div class="header">
-    <h3>app/models/planet.rb</h3>
+    <h3>app/models/person.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -469,8 +469,8 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -488,7 +488,7 @@
 
             
 
-            <code class="ruby">class Planet &lt; ApplicationRecord</code>
+            <code class="ruby">class Person &lt; ApplicationRecord</code>
           </li>
         </div>
       
@@ -499,12 +499,23 @@
 
             
 
-            <code class="ruby">  has_many :people</code>
+            <code class="ruby">  belongs_to :planet</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :species</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -515,18 +526,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="5">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  validates :name, :climate, presence: true</code>
+            <code class="ruby">  has_many :pilots</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :name, :mass, :height, :birth_year ,presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 

@@ -252,9 +252,12 @@
           null
         ]
       },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/planet.rb": {
+      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/person.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
           1,
           null,
           1,
@@ -269,6 +272,6 @@
         ]
       }
     },
-    "timestamp": 1618410200
+    "timestamp": 1618419802
   }
 }
