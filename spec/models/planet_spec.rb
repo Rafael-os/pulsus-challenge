@@ -3,6 +3,10 @@ require 'rails_helper'
 RSpec.describe Planet, type: :model do
   subject { described_class.new(name: 'Tatooine', climate: 'arid') }
 
+  describe 'associations' do
+    it { expect(Planet.reflect_on_association(:people).macro).to eq(:has_many) } 
+  end
+
   describe 'validations' do
     describe 'name' do
       it 'must be present' do
