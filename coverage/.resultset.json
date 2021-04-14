@@ -252,57 +252,12 @@
           null
         ]
       },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/models/person_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/person.rb": {
+      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/planet.rb": {
         "lines": [
           1,
           1,
-          1,
           null,
           1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -312,112 +267,8 @@
           1,
           null
         ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/models/pilot_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/pilot.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/models/planet_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/planet.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/models/species_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/species.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/models/starship_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/models/starship.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/requests/planets_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/views/planets/index.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/controllers/planets_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1618384044
+    "timestamp": 1618408377
   }
 }
