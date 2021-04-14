@@ -1,5 +1,5 @@
 class Planet < ApplicationRecord
   has_many :people
 
-  validates :name, presence: true
+  validates :name, :climate, presence: true
 end
