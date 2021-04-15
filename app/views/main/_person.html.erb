@@ -13,7 +13,35 @@
         </button>
       </div>
       <div class="modal-body">
-        Hello, I am <%= person.name %>. I am <%= person.species.name %>, I weight <%= person.mass %> Kg, born in <%= person.planet.name %> in <%= person.birth_year %>. "
+        Hello, I am 
+        <%= person.name %>. 
+        I am <%= person.species.name %>.
+        <% if person.mass != 0 %>
+          I weight <%= person.mass %> Kg. 
+        <% end %>
+        <% if person.planet.name != "unknown" %>
+          Born in <%= person.planet.name %> 
+        <% else %>
+          Born in unknown planet
+        <% end %>
+        <% if person.birth_year != "unknown" %>
+          in <%= person.birth_year %>.
+        <% else %>
+          in unknown year date.
+        <% end %>
+        <% if person.pilots.any? %>
+          <% if pilot_starships(person).count == 1 %>
+            I have piloted <%= pilot_starships(person)[0] %>.
+          <% else %>
+            I have piloted: 
+            <% pilot_starships(person).each do |starship| %>
+              <%= starship %>
+            <% end %>
+            .
+          <% end %>
+        <% else %>
+          I have never risked my life piloting.
+        <% end %>
       </div>
     </div>
   </div>
