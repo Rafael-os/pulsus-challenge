@@ -1,8 +1,13 @@
 <div id="background">
   <div class="container">
     <div class="grid-container">
+      <div data-controller="modal">
+        <button class="btn btn-primary btn-lg">
+          Click me!
+        </button>
+      </div>
       <% @people.each do |person| %>
-        <div class="grid-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <div class="grid-item">
           <%= link_to person.name %> 
         </div>
       <% end %>
