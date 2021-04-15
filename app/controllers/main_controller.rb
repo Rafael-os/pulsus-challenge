@@ -3,17 +3,12 @@ class MainController < ApplicationController
     @people = Person.all
   end
 
+
+
   private
 
-  def planets
-    @planets = Planet.all
-  end
-
-  def species
-    @species = Species.all
-  end
-
-  def starships
+  def pilot
     @starships = Starship.all
+    @people.find
   end
 end
