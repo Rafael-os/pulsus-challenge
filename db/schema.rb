@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_13_123856) do
+ActiveRecord::Schema.define(version: 2021_04_15_142840) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_04_13_123856) do
     t.bigint "species_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "pilots", array: true
     t.index ["planet_id"], name: "index_people_on_planet_id"
     t.index ["species_id"], name: "index_people_on_species_id"
   end
@@ -54,6 +55,8 @@ ActiveRecord::Schema.define(version: 2021_04_13_123856) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "pilots", array: true
+    t.string "url"
   end
 
   add_foreign_key "people", "planets"

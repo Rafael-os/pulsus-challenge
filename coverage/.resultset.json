@@ -250,17 +250,10 @@
         "lines": [
           1,
           1,
-          null,
           null
         ]
       },
       "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/helpers/planets_helper.rb": {
         "lines": [
           1,
           null
@@ -387,9 +380,17 @@
           2,
           null,
           null,
-          2,
+          3,
           null,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
           1,
           1,
           1,
@@ -409,38 +410,8 @@
           1,
           null
         ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/spec/requests/planets_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/home/rafael/code/Rafael-os/challenges/pulsus-challenge/app/controllers/planets_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1618422462
+    "timestamp": 1618500226
   }
 }

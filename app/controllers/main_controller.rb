@@ -3,17 +3,16 @@ class MainController < ApplicationController
     @people = Person.all
   end
 
-  private
-
-  def planets
-    @planets = Planet.all
+  def format_pilots(person)
+    person.pilots.map { |s| s.split('/').last.to_i }
   end
 
-  def species
-    @species = Species.all
+  def pilot_starships(person)
+    ships = []
+    format_pilots(person).each do |pilot|
+      ships << Starship.find_by(url: "http://swapi.dev/api/starships/#{pilot}/").name
+    end
+    ships
   end
-
-  def starships
-    @starships = Starship.all
-  end
+  helper_method :pilot_starships
 end

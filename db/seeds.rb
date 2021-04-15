@@ -65,6 +65,7 @@ while JSON.parse(pages)["next"].present? do
         birth_year: person["birth_year"],
         planet_id: /(\d+)/.match(person["homeworld"])[0].to_i,
         species_id: /(\d+)/.match(person["species"][0])[0].to_i,
+        pilots: person["starships"]
       )
     else
       Person.create!(
@@ -73,7 +74,8 @@ while JSON.parse(pages)["next"].present? do
         mass: person["mass"],
         birth_year: person["birth_year"],
         planet_id: /(\d+)/.match(person["homeworld"])[0].to_i,
-        species_id: 1
+        species_id: 1,
+        pilots: person["starships"]
       )
     end
   end
@@ -90,6 +92,7 @@ JSON.parse(pages)["results"].each do |person|
       birth_year: person["birth_year"],
       planet_id: /(\d+)/.match(person["homeworld"])[0].to_i,
       species_id: /(\d+)/.match(person["species"][0])[0].to_i,
+      pilots: person["starships"]
     )
   else
     Person.create(
@@ -98,7 +101,8 @@ JSON.parse(pages)["results"].each do |person|
       mass: person["mass"],
       birth_year: person["birth_year"],
       planet_id: /(\d+)/.match(person["homeworld"])[0].to_i,
-      species_id: 1
+      species_id: 1,
+      pilots: person["starships"]
     )
   end
 end
@@ -113,7 +117,9 @@ while JSON.parse(pages)["next"].present? do
   starships_array = JSON.parse(pages)["results"]
   starships_array.each do |starship|
     Starship.create(
-      name: starship["name"]
+      name: starship["name"],
+      pilots: starship["pilots"],
+      url: starship["url"]
     )
   end
   i += 1
@@ -122,7 +128,9 @@ end
 
 JSON.parse(pages)["results"].each do |starship|
   Starship.create(
-    name: starship["name"]
+    name: starship["name"],
+    pilots: starship["pilots"],
+    url: starship["url"]
   )
 end
 

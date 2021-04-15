@@ -1,0 +1,48 @@
+<button type="button" class="" data-toggle="modal" data-target="#Modal<%=person.id%>">
+  <%= person.name %>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="Modal<%=person.id%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Info</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Hello, I am 
+        <%= person.name %>. 
+        I am <%= person.species.name %>.
+        <% if person.mass != 0 %>
+          I weight <%= person.mass %> Kg. 
+        <% end %>
+        <% if person.planet.name != "unknown" %>
+          Born in <%= person.planet.name %> 
+        <% else %>
+          Born in unknown planet
+        <% end %>
+        <% if person.birth_year != "unknown" %>
+          in <%= person.birth_year %>.
+        <% else %>
+          in unknown year date.
+        <% end %>
+        <% if person.pilots.any? %>
+          <% if pilot_starships(person).count == 1 %>
+            I have piloted <%= pilot_starships(person)[0] %>.
+          <% else %>
+            I have piloted: 
+            <% pilot_starships(person).each do |starship| %>
+              <%= starship %>
+            <% end %>
+            .
+          <% end %>
+        <% else %>
+          I have never risked my life piloting.
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
