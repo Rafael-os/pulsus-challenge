@@ -1,0 +1,30 @@
+<div id="background">
+  <div class="container">
+    <div class="grid-container">
+      <div data-controller="modal">
+        <button class="btn btn-primary btn-lg">
+          Click me!
+        </button>
+      </div>
+      <% @people.each do |person| %>
+        <div class="grid-item">
+          <%= link_to person.name %> 
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hey</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        World
+      </div>
+    </div>
+  </div>
+</div>
