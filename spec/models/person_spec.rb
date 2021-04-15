@@ -5,7 +5,7 @@ RSpec.describe Person, type: :model do
   describe 'associations' do
     it { expect(Person.reflect_on_association(:planet).macro).to eq(:belongs_to) } 
     it { expect(Person.reflect_on_association(:species).macro).to eq(:belongs_to) }
-    it { expect(Person.reflect_on_association(:pilots).macro).to eq(:has_many) }
+    it { expect(Person.reflect_on_association(:starships).macro).to eq(:has_many) }
   end
 
   describe 'validations' do

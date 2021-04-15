@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Starship, type: :model do
   describe 'associations' do
-    it { expect(Starship.reflect_on_association(:pilots).macro).to eq(:has_many) }
+    it { expect(Starship.reflect_on_association(:people).macro).to eq(:has_many) }
   end
 
   subject { described_class.new(name: 'x-wing') }
